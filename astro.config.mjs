@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import mdx from "@astrojs/mdx";
 import openapiBackend from "@astro-openapi/backend";
@@ -12,5 +12,5 @@ import openapiGuiRedoc from "@astro-openapi/gui-redoc";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), mdx(), openapiBackend(), openapiTypegen(), openapiBundler(), openapiClient(), openapiGuiSwagger(), openapiGuiElements(), openapiGuiRedoc()]
+  integrations: [react(), mdx()],
 });
